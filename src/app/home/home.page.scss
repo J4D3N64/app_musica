@@ -1,4 +1,6 @@
-#container {
+/* 1.crear dos clases de css y van a llamarlas en su html 
+2.personalizar todos sus slides con informacion diferente y minimo sean 5 slides diferentes  */
+/* #container {
   text-align: center;
 
   position: absolute;
@@ -24,4 +26,22 @@
 
 #container a {
   text-decoration: none;
+} */
+
+ion-title{
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  color: aqua;
 }
+img {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+ 
