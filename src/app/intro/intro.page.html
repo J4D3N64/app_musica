@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>intro</ion-title>
+    <ion-button (click)="close()" color=#D7D7D7>
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <swiper-container>
+    <swiper-slide *ngFor="let slide of slides">
+      <ion-header [translucent]="true">
+        <ion-toolbar>
+          <ion-icon name="{{slide.icon}}"></ion-icon>
+          <ion-title>{{slide.title}}</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <img src="{{slide.img}}" alt="">
+      <p>
+        {{slide.descripcion}}
+      </p>
+    </swiper-slide>
+
+  </swiper-container>
+  
+</ion-content>

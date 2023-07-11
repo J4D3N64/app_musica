@@ -9,10 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+/**clase 10-07-2023 */
+import { IonicStorageModule } from '@ionic/storage-angular';
+
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA,],
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,IonicStorageModule.forRoot()],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
