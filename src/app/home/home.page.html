@@ -1,9 +1,38 @@
-<ion-content class="home">
-  
-  <p>
-    <ion-button (click)="intro()" color=#D7D7D7>
-      <ion-icon name="enter-outline"></ion-icon>
-        {{Control.Title}}
-    </ion-button>
-  </p>
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="musical-notes-outline" slot="start"></ion-icon>
+    <ion-title>App Music</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="parent">
+  <ion-card class="parent">
+    <img alt="Silhouette of mountains" src="assets/img/home.png" />
+    <ion-card-header>
+      <ion-card-title>App music</ion-card-title>
+      <ion-card-subtitle>Bienvenidos</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div >Toda tu musica preferida en un solo lugar.
+        <br>
+      </div>
+
+      <ion-buttons class="parent">
+        <ion-button fill="clear" (click)="goToIntro()"><ion-icon name="star-outline"
+            slot="start"></ion-icon>Intro</ion-button>
+        <ion-button fill="clear" (click)="goToLogin()"><ion-icon name="enter-outline" slot="start"></ion-icon>Inicia
+          sesion</ion-button>
+
+      </ion-buttons>
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p>&copy; 2023 AyC systems s.a.s</p>
+  </ion-toolbar>
+
+</ion-footer>

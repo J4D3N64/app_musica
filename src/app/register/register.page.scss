@@ -1,0 +1,20 @@
+ion-title {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--ion-color-primary-contrast);
+}
+
+ion-card {
+    padding: 20px;
+    margin: 20px;
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+}
+.MyText{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--ion-color-primary-contrast);
+}

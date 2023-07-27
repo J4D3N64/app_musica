@@ -15,9 +15,14 @@ export class HomePage {
     Icon:"home",
     Description:"Navega hasta la siguiente pagina"
   };
-  intro(){
-    console.log("Click")
+  goToIntro(){
+    console.log("Intro")
     this.route.navigateByUrl("/intro");
   }
+  goToLogin(){
+    console.log("Login");
+    this.route.navigateByUrl("/login");
+  }
+
 
 }

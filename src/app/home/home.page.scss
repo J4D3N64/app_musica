@@ -31,7 +31,11 @@
 ion-title{
   font-size: large;
   font-family: 'Courier New', Courier, monospace;
-  color: aqua;
+  color: var(--ion-color-primary-contrast);
+}
+ion-card{
+  padding: 20px;
+  margin: 20px;
 }
 img {
   border: 1px solid #ddd;
@@ -49,7 +53,10 @@ p {
 .home{
   background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
 }
-
+.parent{
+  display: grid;
+  place-items: center;
+}
 
 
  
