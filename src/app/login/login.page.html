@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-icon name="musical-notes-outline" slot="start"></ion-icon>
     <ion-title>Usuario registrado</ion-title>
@@ -45,17 +45,18 @@
 </ion-content>
 <ion-footer>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button [routerLink]="['/home']" class="MyText">
+    <ion-list slot="start">
+      <ion-item [routerLink]="['/home']" class="MyText">
         <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
         Regresar
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button [routerLink]="['/register']" class="MyText">
+      </ion-item>
+    </ion-list>
+    <ion-list slot="end">
+      <ion-item [routerLink]="['/register']" class="MyText">
         <ion-icon name="open-outline" slot="end"></ion-icon>
         Registrarse
-      </ion-button>
-    </ion-buttons>
+
+      </ion-item>
+    </ion-list>
   </ion-toolbar>
 </ion-footer>

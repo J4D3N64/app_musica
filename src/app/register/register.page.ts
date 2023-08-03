@@ -23,7 +23,8 @@ export class RegisterPage implements OnInit {
     private toastController: ToastController) {
     this.formRegister = this.fb.group(
       {
-        'name': new FormControl("", Validators.compose([Validators.required, Validators.email])),
+        'name': new FormControl("", Validators.compose([Validators.required])),
+        'mail': new FormControl("", Validators.compose([Validators.required, Validators.email])),
         'password': new FormControl("", Validators.compose([Validators.required, Validators.min(8), Validators.maxLength(16)])),
         'confirmPassword': new FormControl("", Validators.compose([Validators.required, Validators.min(8), Validators.maxLength(16)]))
       }
@@ -51,12 +52,14 @@ export class RegisterPage implements OnInit {
 
     var user = {
       name: form.name,
+      mail:form.email,
       password: form.password,
       confirmPassword: form.confirmPassword
     }
 
     localStorage.setItem('User', JSON.stringify(user));
     this.goToLogin();
+    console.log(user);
   }
 
   /**Otra funcion para mostrar mensajes personalizados */
